@@ -1,0 +1,89 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0c55e7; /* Soft grayish background */
+}
+
+.App {
+  text-align: center;
+  background-color: #ffffff; /* White background */
+  padding: 40px;
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+  max-width: 400px; /* Limit width for better readability */
+}
+
+.timer {
+  font-size: 5rem; /* Larger font size for the timer */
+  margin-bottom: 20px; /* Add some space below the timer */
+  color: #2f80ed; /* Blue color for the timer */
+  animation: pulse 1.5s infinite alternate; /* Add pulsating animation */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1); /* Initial scale */
+  }
+  100% {
+    transform: scale(1.05); /* Slightly larger scale */
+  }
+}
+
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Wrap buttons on smaller screens */
+  gap: 10px; /* Add space between buttons */
+  margin-top: 30px; /* Increase top margin for separation */
+}
+
+button {
+  font-size: 1.2rem; /* Increased button font size */
+  padding: 12px 24px; /* Increased button padding */
+  cursor: pointer;
+  border: 30px; /* Remove button border */
+  border-radius: 8px; /* Rounded button corners */
+  background-color: #2f80ed; /* Blue button background color */
+  color: #65b718; /* White button text color */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle button shadow */
+}
+
+button:hover,
+button:focus { /* Apply the same style for focus state */
+  background-color: #1864ab; /* Darker blue on hover */
+}
+
+/* Additional Style for Enhanced Visibility */
+button:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 0 4px rgba(47, 128, 237, 0.4); /* Add focus indicator */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .timer {
+    font-size: 4rem;
+  }
+  
+  button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .timer {
+    font-size: 3rem;
+  }
+  
+  button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
