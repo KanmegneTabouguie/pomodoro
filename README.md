@@ -34,7 +34,3 @@ https://github.com/KanmegneTabouguie/pomodoro/assets/133702750/7fd662ee-3a80-4b4
 
 
 
-## Installation
-
-Aucune installation requise. Ouvrez simplement l'application Pomodoro Timer dans un navigateur web pour l'utiliser.
-
